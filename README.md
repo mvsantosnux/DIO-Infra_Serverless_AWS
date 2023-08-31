@@ -1,14 +1,6 @@
-<!--
-title: 'AWS Simple HTTP Endpoint example in NodeJS'
-description: 'This template demonstrates how to make a simple REST API with Node.js running on AWS Lambda and API Gateway using the traditional Serverless Framework.'
-layout: Doc
-framework: v2
-platform: AWS
-language: nodeJS
-authorLink: 'https://github.com/serverless'
-authorName: 'Serverless, inc.'
-authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
--->
+### Projeto de Conclusão de fase - Curso BootCAMP AWS  ###
+https://github.com/mvsantosnux/DIO-Infra_Serverless_AWS
+### Servless ###
 
 # API Node.js com Serverless Framework em ambiente AWS
 
@@ -17,17 +9,16 @@ Este repositório contém o código fonte do Live Coding da DIO no dia 29/07/202
 ## Etapas
 
 Pré requisitos: 
- - possuir uma conta na AWS e instalar Node.js na máquina.
- - Instalar o AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html
+ - possuir uma conta na AWS 
+ - instalar Node.js na máquina.
+ - Instalar o AWS CLI
+### Setup Inicial ###
 
-### Setup Inicial
-
-#### Credenciais AWS
-
-- Criar usuário: AWS Management Console -> IAM Dashboard -> Create New User -> <nome do usuário> -> Permissions "Administrator Access" -> Programmatic Access -> Dowload Keys
-- No terminal: ```$ aws configure``` -> colar as credenciais geradas anteriormente
-- 
-#### Configurar o framework Serverless
+#### Credenciais AWS no Console ###
+- Criar usuário: AWS Management Console -> IAM Dashboard -> Create New User -> <nome do usuário> -> Permissions "Administrator Access" -> Programmatic Access -> Dowload Keys (guardar esse arquivo, mas pode criar quantos quiser)
+- No terminal: ```$ aws configure``` -> colar as credenciais geradas 
+-Selecionar a região default: 
+#### Configurar o framework Serverless ###
 ```$ npm i -g serverless```
 
 ### Desenvolvimento do projeto
@@ -37,13 +28,13 @@ $ serverless
 Login/Register: No
 Update: No
 Type: Node.js REST API
-Name: dio-live
+Name: dio-aws
 ```
 ```
-$ cd dio-live
+$ cd dio-aws
 $ code .
 ``` 
-- No arquivo ```serverless.yml``` adicionar a região ```region: us-east-1``` dentro do escopo de ```provider:```
+- No arquivo ```serverless.yml``` adicionar a região ```region: sa-east-1``` dentro do escopo de ```provider:```
 - Salvar e realizar o deploy ```$ serverless deploy -v```
 
 #### Estruturar o código
